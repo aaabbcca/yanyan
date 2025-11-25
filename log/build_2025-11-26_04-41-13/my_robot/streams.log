@@ -1,0 +1,21 @@
+[1.100s] Invoking command in '/home/sayan/yanyan/build/my_robot': PYTHONPATH=/home/sayan/yanyan/build/my_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sayan/yanyan/build/my_robot/build --no-deps symlink_data
+[1.537s] running develop
+[1.832s] running egg_info
+[1.833s] writing my_robot.egg-info/PKG-INFO
+[1.833s] writing dependency_links to my_robot.egg-info/dependency_links.txt
+[1.833s] writing entry points to my_robot.egg-info/entry_points.txt
+[1.834s] writing requirements to my_robot.egg-info/requires.txt
+[1.834s] writing top-level names to my_robot.egg-info/top_level.txt
+[1.837s] reading manifest file 'my_robot.egg-info/SOURCES.txt'
+[1.839s] writing manifest file 'my_robot.egg-info/SOURCES.txt'
+[1.842s] running build_ext
+[1.842s] Creating /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my-robot.egg-link (link to .)
+[1.843s] Installing blip_vision_node script to /home/sayan/yanyan/install/my_robot/lib/my_robot
+[1.844s] Installing sensor_fusion_node script to /home/sayan/yanyan/install/my_robot/lib/my_robot
+[1.844s] Installing yolo_detection_node script to /home/sayan/yanyan/install/my_robot/lib/my_robot
+[1.844s] 
+[1.845s] Installed /home/sayan/yanyan/build/my_robot
+[1.845s] running symlink_data
+[1.846s] symbolically linking /home/sayan/yanyan/build/my_robot/worlds/gochang_dolmen_park.world -> /home/sayan/yanyan/install/my_robot/share/my_robot/worlds
+[1.846s] error: [Errno 17] File exists: '/home/sayan/yanyan/build/my_robot/worlds/gochang_dolmen_park.world' -> '/home/sayan/yanyan/install/my_robot/share/my_robot/worlds/gochang_dolmen_park.world'
+[1.901s] Invoked command in '/home/sayan/yanyan/build/my_robot' returned '1': PYTHONPATH=/home/sayan/yanyan/build/my_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/sayan/yanyan/build/my_robot/build --no-deps symlink_data
