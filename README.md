@@ -156,3 +156,107 @@ ros2 run teleop_twist_keyboard teleop_twist_keyboard
 ## 📄 라이선스
 
 MIT License
+
+## 🎨 RViz 시각화 설정
+
+### 최종 디스플레이 구성:
+```
+✓ Grid - 기본 그리드
+✓ SLAM Map - 2D 누적 맵 (Alpha: 0.2, 반투명)
+✓ RobotModel - 로봇 3D 모델
+✓ TF - 좌표계 프레임
+✓ LaserScan - 2D LiDAR (빨간색 원형)
+✓ PointCloud2 - 3D LiDAR (흰색 포인트클라우드)
+```
+
+### PointCloud 설정:
+
+**실시간만 표시:**
+```yaml
+Decay Time: 0
+Color: 흰색 (255; 255; 255)
+Color Transformer: FlatColor
+Use rainbow: ☐
+```
+
+**누적 효과 (N초간):**
+```yaml
+Decay Time: 5 ~ 120 (초 단위)
+Color: 흰색 (255; 255; 255)
+Style: Spheres
+Size: 0.05
+```
+
+### SLAM Map 설정:
+```yaml
+Alpha: 0.2 (반투명)
+Draw Behind: ✓
+Color Scheme: map
+```
+
+### RViz 설정 파일 위치:
+```
+~/yanyan/src/my_robot/rviz/final_slam_visualization.rviz
+```
+
+### 실행 방법:
+```bash
+# 전체 시스템 (Gazebo + SLAM + RViz)
+cd ~/yanyan
+./start_complete_system.sh
+
+# RViz만 (저장된 설정으로)
+source install/setup.bash
+rviz2 -d src/my_robot/rviz/final_slam_visualization.rviz
+```
+
+## 💾 맵 저장하기
+
+매핑 완료 후 맵을 저장하려면:
+```bash
+cd ~/yanyan
+source install/setup.bash
+
+# SLAM 맵 저장
+ros2 service call /slam_toolbox/save_map slam_toolbox/srv/SaveMap \
+  "{name: {data: 'gochang_dolmen_final_map'}}"
+```
+
+저장된 파일:
+- `gochang_dolmen_final_map.yaml` - 맵 메타데이터
+- `gochang_dolmen_final_map.pgm` - 맵 이미지
+
+## 🎯 발표/시연용 팁
+
+### 1. 깔끔한 시각화:
+- SLAM Map Alpha를 0.2로 설정 (배경으로)
+- PointCloud를 흰색 FlatColor로 설정
+- Decay Time을 5-10초로 설정 (적절한 누적)
+
+### 2. 로봇 제어:
+- Teleop 창에서 w/x/a/d로 부드럽게 이동
+- 천천히 움직여서 맵 품질 향상
+
+### 3. 카메라 각도:
+- 위에서 내려다보는 각도 (Orbit 뷰)
+- Distance: 15-25m
+- Pitch: 0.8-1.0
+
+### 4. 스크린샷/녹화:
+```bash
+# 스크린샷
+gnome-screenshot -w
+
+# 화면 녹화 (설치 필요시)
+sudo apt install simplescreenrecorder -y
+simplescreenrecorder
+```
+
+## 📊 성능 메트릭
+
+- YOLO 처리: ~0.05초
+- BLIP 처리: ~0.8초
+- SLAM 업데이트: 실시간
+- 포인트클라우드: 30Hz
+- LaserScan: 10Hz
+
