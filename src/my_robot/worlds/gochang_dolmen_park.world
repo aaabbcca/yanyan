@@ -441,23 +441,251 @@
       </plugin>
       <pose>0 0 0.1 0 -0 0</pose>
     </model>
-    <model name='test2'>
-      <pose>1.7318 -2.41908 0 0 -0 0</pose>
+    <model name='parkroad'>
+      <pose>-4.83853 6.91089 0 0 -0 0</pose>
       <static>1</static>
       <link name='body'>
         <visual name='visual'>
           <geometry>
             <mesh>
-              <uri>model://test2/meshes/test2.dae</uri>
-              <scale>0.004 0.004 0.004</scale>
+              <uri>model://parkroad/meshes/parkroad.dae</uri>
+              <scale>0.0035 0.0035 0.0035</scale>
             </mesh>
           </geometry>
         </visual>
         <collision name='collision'>
           <geometry>
             <mesh>
-              <uri>model://test2/meshes/test2.dae</uri>
-              <scale>0.004 0.004 0.004</scale>
+              <uri>model://parkroad/meshes/parkroad.dae</uri>
+              <scale>0.0035 0.0035 0.0035</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='parkfence'>
+      <pose>-4.79543 6.99288 0 0 -0 0</pose>
+      <static>1</static>
+      <link name='body'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://parkfence/meshes/parkfence.dae</uri>
+              <scale>0.0035 0.0035 0.0035</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://parkfence/meshes/parkfence.dae</uri>
+              <scale>0.0035 0.0035 0.0035</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='parkbench'>
+      <pose>-4.79037 6.92577 0 0 -0 0</pose>
+      <static>1</static>
+      <link name='body'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://parkbench/meshes/parkbench.dae</uri>
+              <scale>0.0035 0.0035 0.0035</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://parkbench/meshes/parkbench.dae</uri>
+              <scale>0.0035 0.0035 0.0035</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='parktree'>
+      <pose>-4.82212 6.94806 0 0 -0 0</pose>
+      <static>1</static>
+      <link name='body'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://parktree/meshes/parktree.dae</uri>
+              <scale>0.0035 0.0035 0.0035</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://parktree/meshes/parktree.dae</uri>
+              <scale>0.0035 0.0035 0.0035</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='fence'>
+      <pose>-4.78113 6.98583 0 0 -0 0</pose>
+      <static>1</static>
+      <link name='body'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://fence/meshes/fence.dae</uri>
+              <scale>0.0035 0.0035 0.0035</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://fence/meshes/fence.dae</uri>
+              <scale>0.0035 0.0035 0.0035</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='stone'>
+      <pose>-4.80461 6.93553 0 0 -0 0</pose>
+      <static>1</static>
+      <link name='body'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://stone/meshes/stone.dae</uri>
+              <scale>0.0035 0.0035 0.0035</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://stone/meshes/stone.dae</uri>
+              <scale>0.0035 0.0035 0.0035</scale>
+            </mesh>
+          </geometry>
+          <max_contacts>10</max_contacts>
+          <surface>
+            <contact>
+              <ode/>
+            </contact>
+            <bounce/>
+            <friction>
+              <torsional>
+                <ode/>
+              </torsional>
+              <ode/>
+            </friction>
+          </surface>
+        </collision>
+        <self_collide>0</self_collide>
+        <enable_wind>0</enable_wind>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='tree'>
+      <pose>-4.71022 7.00104 0 0 -0 0</pose>
+      <static>1</static>
+      <link name='body'>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>model://tree/meshes/tree.dae</uri>
+              <scale>0.0035 0.0035 0.0035</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>model://tree/meshes/tree.dae</uri>
+              <scale>0.0035 0.0035 0.0035</scale>
             </mesh>
           </geometry>
           <max_contacts>10</max_contacts>
@@ -480,10 +708,20 @@
       </link>
     </model>
     <state world_name='default'>
-      <sim_time>247 412000000</sim_time>
-      <real_time>403 248674782</real_time>
-      <wall_time>1764029293 762328771</wall_time>
-      <iterations>247412</iterations>
+      <sim_time>722 766000000</sim_time>
+      <real_time>899 622918136</real_time>
+      <wall_time>1764085023 479393885</wall_time>
+      <iterations>722766</iterations>
+      <model name='fence'>
+        <pose>-4.80111 6.96579 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='body'>
+          <pose>-4.80111 6.96579 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
       <model name='ground_plane'>
         <pose>0 0 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -495,32 +733,82 @@
         </link>
       </model>
       <model name='my_robot'>
-        <pose>2.16067 5.37409 4.9e-05 -3e-06 -0.050966 -0.285385</pose>
+        <pose>0.790385 4.53161 5e-05 -2e-06 -0.050969 -0.804097</pose>
         <scale>1 1 1</scale>
         <link name='base_footprint'>
-          <pose>2.16067 5.37409 4.9e-05 -3e-06 -0.050966 -0.285385</pose>
-          <velocity>-0.000256 -0.000211 -0.00031 -0.000918 0.00319 -0.001397</velocity>
-          <acceleration>1.1361 0.192556 -3.02265 0.462398 0.315515 -3.06826</acceleration>
-          <wrench>2.54941 0.432096 -6.78283 0 -0 0</wrench>
+          <pose>0.790385 4.53161 5e-05 -2e-06 -0.050969 -0.804097</pose>
+          <velocity>0.000978 -2e-05 0.003444 -0.002766 -0.032958 -0.001062</velocity>
+          <acceleration>-1.79577 -0.078623 6.35551 -2.35021 1.36166 2.84664</acceleration>
+          <wrench>-4.0297 -0.17643 14.2618 0 -0 0</wrench>
         </link>
         <link name='wheel_left_link'>
-          <pose>2.1996 5.51274 0.033007 -1.57 0.19551 -0.28519</pose>
-          <velocity>0.00057 0.000151 -0.000652 0.000766 0.002703 -0.001065</velocity>
-          <acceleration>1.40788 0.556778 -7.33521 -2.27899 -1.06996 -1.77962</acceleration>
-          <wrench>0.140788 0.055678 -0.733521 0 -0 0</wrench>
+          <pose>0.892925 4.63272 0.033007 -1.56986 0.582318 -0.80354</pose>
+          <velocity>-0.000932 5.2e-05 0.006726 -0.001874 -0.02922 -0.001621</velocity>
+          <acceleration>-1.84054 0.567964 13.4249 -0.637632 0.591173 -2.70565</acceleration>
+          <wrench>-0.184054 0.056796 1.34249 0 -0 0</wrench>
         </link>
         <link name='wheel_right_link'>
-          <pose>2.11852 5.23639 0.033007 -1.57 0.002904 -0.285342</pose>
-          <velocity>7.3e-05 4e-06 -1e-05 -0.000427 0.002163 -0.001008</velocity>
-          <acceleration>0.996 0.400561 -0.192134 0.230321 -0.524278 1.20428</acceleration>
-          <wrench>0.0996 0.040056 -0.019213 0 -0 0</wrench>
+          <pose>0.68551 4.43292 0.033007 -1.56998 0.195577 -0.803898</pose>
+          <velocity>-0.000982 8.1e-05 0.000174 -0.002874 -0.030283 -0.001565</velocity>
+          <acceleration>-1.378 -0.413713 0.347072 -2.69977 1.32377 -2.32481</acceleration>
+          <wrench>-0.1378 -0.041371 0.034707 0 -0 0</wrench>
         </link>
       </model>
-      <model name='test2'>
-        <pose>-5.32399 8.43415 0 0 -0 0</pose>
+      <model name='parkbench'>
+        <pose>-4.79037 6.92577 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='body'>
-          <pose>-5.32399 8.43415 0 0 -0 0</pose>
+          <pose>-4.79037 6.92577 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='parkfence'>
+        <pose>-4.79543 6.99288 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='body'>
+          <pose>-4.79543 6.99288 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='parkroad'>
+        <pose>-4.83853 6.91089 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='body'>
+          <pose>-4.83853 6.91089 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='parktree'>
+        <pose>-4.82212 6.94806 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='body'>
+          <pose>-4.82212 6.94806 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='stone'>
+        <pose>-4.80461 6.93553 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='body'>
+          <pose>-4.80461 6.93553 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='tree'>
+        <pose>-4.71022 7.00104 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='body'>
+          <pose>-4.71022 7.00104 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -532,7 +820,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>20.1889 11.5842 45.6381 -0 1.23676 -3.1085</pose>
+        <pose>3.69685 2.14776 37.1423 0 1.4498 3.13323</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>

@@ -1,0 +1,28 @@
+slam_toolbox:
+  ros__parameters:
+    # 센서 설정
+    odom_frame: odom
+    map_frame: map
+    base_frame: base_footprint
+    scan_topic: /scan
+    
+    # SLAM 모드
+    mode: mapping
+    
+    # 맵 업데이트 설정
+    map_update_interval: 2.0
+    resolution: 0.05
+    max_laser_range: 25.0
+    minimum_time_interval: 0.5
+    
+    # 루프 클로저 (정확도 향상)
+    do_loop_closing: true
+    loop_match_minimum_chain_size: 10
+    
+    # 성능 최적화
+    throttle_scans: 1
+    minimum_travel_distance: 0.2
+    minimum_travel_heading: 0.2
+    
+    # 맵 저장 설정
+    map_name: /tmp/dolmen_park_map

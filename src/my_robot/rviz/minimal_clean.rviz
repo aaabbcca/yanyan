@@ -1,0 +1,57 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.05
+      Cell Size: 1
+      Class: rviz_default_plugins/Grid
+      Color: 50; 50; 50
+      Enabled: true
+      Name: Grid
+      Reference Frame: odom
+      
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Class: rviz_default_plugins/LaserScan
+      Color: 220; 220; 220
+      Enabled: true
+      Name: LaserScan_2D
+      Size (m): 0.06
+      Style: Points
+      Topic:
+        Value: /scan
+        
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Class: rviz_default_plugins/PointCloud2
+      Color Transformer: Intensity
+      Enabled: true
+      Name: Velodyne_3D_LiDAR
+      Size (m): 0.02
+      Style: Points
+      Topic:
+        Value: /velodyne_points
+      Use rainbow: false
+      Decay Time: 3
+      Min Color: 180; 180; 180
+      Max Color: 255; 255; 255
+      
+  Global Options:
+    Background Color: 0; 0; 0
+    Fixed Frame: odom
+    Frame Rate: 30
+    
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 15.0
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Pitch: 1.0
+      Target Frame: base_link
+      Yaw: 0

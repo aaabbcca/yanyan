@@ -1,0 +1,78 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+
+Visualization Manager:
+  Class: ""
+  Displays:
+    # Grid (어두운 격자)
+    - Alpha: 0.2
+      Cell Size: 1
+      Class: rviz_default_plugins/Grid
+      Color: 80; 80; 80
+      Enabled: true
+      Name: Grid
+      Reference Frame: odom
+      
+    # LaserScan (흰색 원형)
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Class: rviz_default_plugins/LaserScan
+      Color: 255; 255; 255
+      Enabled: true
+      Name: LaserScan_2D
+      Size (m): 0.08
+      Style: Points
+      Topic:
+        Value: /scan
+        
+    # DepthCamera (빨간색)
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Class: rviz_default_plugins/PointCloud2
+      Color Transformer: FlatColor
+      Enabled: true
+      Name: DepthCamera_Red
+      Size (m): 0.08
+      Style: Flat Squares
+      Color: 255; 0; 0
+      Topic:
+        Value: /depth_camera/depth_camera/points
+        
+    # Velodyne (노란/초록 그라데이션)
+    - Alpha: 1
+      Autocompute Intensity Bounds: true
+      Class: rviz_default_plugins/PointCloud2
+      Color Transformer: AxisColor
+      Enabled: true
+      Name: Velodyne_3D_Rainbow
+      Size (m): 0.04
+      Style: Flat Squares
+      Topic:
+        Value: /velodyne_points
+      Use rainbow: true
+      Axis: Z
+      Autocompute Value Bounds:
+        Max Value: 10
+        Min Value: -10
+        Value: true
+      
+  Global Options:
+    Background Color: 0; 0; 0
+    Fixed Frame: odom
+    Frame Rate: 30
+    
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 15.0
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Invert Z Axis: false
+      Name: TopDown Angled View
+      Near Clip Distance: 0.01
+      Pitch: 1.2
+      Target Frame: base_link
+      Yaw: 3.5

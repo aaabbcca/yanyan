@@ -1,0 +1,138 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Views
+    Name: Views
+
+Visualization Manager:
+  Class: ""
+  Displays:
+    # ========== 맵 관련 ==========
+    
+    # 1. SLAM 누적 맵 (회색 그리드)
+    - Class: rviz_default_plugins/Map
+      Name: "🗺️ SLAM Map"
+      Topic: /map
+      Color Scheme: map
+      Draw Behind: true
+      Enabled: true
+      Alpha: 0.7
+      
+    # ========== 센서 데이터 ==========
+    
+    # 2. 2D LaserScan (빨간 원)
+    - Class: rviz_default_plugins/LaserScan
+      Name: "🔴 2D LiDAR"
+      Topic: /scan
+      Size: 0.08
+      Style: Spheres
+      Color: 255; 50; 50
+      Alpha: 1.0
+      Enabled: true
+      
+    # 3. 3D PointCloud (무지개 색상)
+    - Class: rviz_default_plugins/PointCloud2
+      Name: "🌈 3D LiDAR"
+      Topic: /velodyne_points
+      Size: 0.06
+      Style: Spheres
+      Color Transformer: Intensity
+      Channel Name: intensity
+      Use rainbow: true
+      Min Color: 64; 0; 128
+      Max Color: 255; 255; 0
+      Autocompute Intensity Bounds: true
+      Decay Time: 2.0
+      Enabled: true
+      
+    # 4. Depth Camera PointCloud
+    - Class: rviz_default_plugins/PointCloud2
+      Name: "📷 Depth Camera"
+      Topic: /depth_camera/depth_camera/points
+      Size: 0.04
+      Style: Flat Squares
+      Color Transformer: RGB8
+      Decay Time: 1.0
+      Enabled: true
+      
+    # ========== 로봇 ==========
+    
+    # 5. 로봇 모델
+    - Class: rviz_default_plugins/RobotModel
+      Name: "🤖 Robot"
+      Description Topic: /robot_description
+      Visual Enabled: true
+      Collision Enabled: false
+      Alpha: 1.0
+      Enabled: true
+      
+    # 6. TF 좌표계
+    - Class: rviz_default_plugins/TF
+      Name: "📐 TF Frames"
+      Show Names: true
+      Show Axes: true
+      Show Arrows: false
+      Frame Timeout: 15.0
+      Enabled: true
+      Frames:
+        All Enabled: false
+        map: true
+        odom: true
+        base_footprint: true
+        base_link: true
+        lidar_3d_link: true
+        
+    # ========== 카메라 ==========
+    
+    # 7. 카메라 이미지
+    - Class: rviz_default_plugins/Camera
+      Name: "📸 Camera View"
+      Topic: /camera_center/camera_center/image_raw
+      Image Rendering: background and overlay
+      Visibility:
+        "🗺️ SLAM Map": true
+        "🔴 2D LiDAR": true
+        "🌈 3D LiDAR": false
+      Enabled: false
+      
+    # ========== SLAM 시각화 ==========
+    
+    # 8. SLAM 스캔 포즈
+    - Class: rviz_default_plugins/PoseArray
+      Name: "📍 Scan Poses"
+      Topic: /slam_toolbox/scan_visualization
+      Arrow Length: 0.2
+      Color: 0; 255; 255
+      Enabled: false
+      
+  # ========== 전역 설정 ==========
+  
+  Global Options:
+    Background Color: 18; 18; 18
+    Fixed Frame: map
+    Frame Rate: 30
+    
+  # ========== 카메라 뷰 ==========
+  
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 20.0
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.06
+        Stereo Focal Distance: 1.0
+      Focal Point:
+        X: 0.0
+        Y: 0.0
+        Z: 0.0
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.05
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.01
+      Pitch: 0.8
+      Target Frame: base_footprint
+      Value: Orbit (rviz)
+      Yaw: 0.8
+      
+  Saved: ~
