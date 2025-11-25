@@ -37,4 +37,5 @@ my_robot/scripts/clip_vqa.py
 my_robot/scripts/yolo_detection_node.py
 resource/my_robot
 scripts/blip2_vision_node.py
+urdf/turtlebot3_with_sensors.urdf
 worlds/gochang_dolmen_park.world

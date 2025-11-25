@@ -31,7 +31,7 @@
 /home/sayan/yanyan/install/my_robot/share/my_robot/launch/gazebo_with_robot.launch.py
 /home/sayan/yanyan/install/my_robot/share/my_robot/launch/navigation1.launch.py
 /home/sayan/yanyan/install/my_robot/share/my_robot/launch/navigation2.launch.py
-/home/sayan/yanyan/install/my_robot/share/my_robot/urdf
+/home/sayan/yanyan/install/my_robot/share/my_robot/urdf/turtlebot3_with_sensors.urdf
 /home/sayan/yanyan/install/my_robot/share/my_robot/config/frames_2025-11-01_03.21.27.pdf
 /home/sayan/yanyan/install/my_robot/share/my_robot/config/kitti_style_rviz.rviz
 /home/sayan/yanyan/install/my_robot/share/my_robot/config/mapper_params_online_async.yaml
