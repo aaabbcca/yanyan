@@ -1,0 +1,92 @@
+[0.563s] Invoking command in '/home/sayan/yanyan/src/my_robot': PYTHONPATH=/home/sayan/yanyan/build/my_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_robot build --build-base /home/sayan/yanyan/build/my_robot/build install --record /home/sayan/yanyan/build/my_robot/install.log --single-version-externally-managed install_data
+[0.752s] running egg_info
+[0.753s] creating ../../build/my_robot/my_robot.egg-info
+[0.753s] writing ../../build/my_robot/my_robot.egg-info/PKG-INFO
+[0.753s] writing dependency_links to ../../build/my_robot/my_robot.egg-info/dependency_links.txt
+[0.753s] writing entry points to ../../build/my_robot/my_robot.egg-info/entry_points.txt
+[0.754s] writing requirements to ../../build/my_robot/my_robot.egg-info/requires.txt
+[0.754s] writing top-level names to ../../build/my_robot/my_robot.egg-info/top_level.txt
+[0.754s] writing manifest file '../../build/my_robot/my_robot.egg-info/SOURCES.txt'
+[0.755s] reading manifest file '../../build/my_robot/my_robot.egg-info/SOURCES.txt'
+[0.755s] writing manifest file '../../build/my_robot/my_robot.egg-info/SOURCES.txt'
+[0.756s] running build
+[0.756s] running build_py
+[0.756s] creating /home/sayan/yanyan/build/my_robot/build
+[0.756s] creating /home/sayan/yanyan/build/my_robot/build/lib
+[0.756s] creating /home/sayan/yanyan/build/my_robot/build/lib/my_robot
+[0.756s] copying my_robot/__init__.py -> /home/sayan/yanyan/build/my_robot/build/lib/my_robot
+[0.756s] copying my_robot/sensor_fusion_node.py -> /home/sayan/yanyan/build/my_robot/build/lib/my_robot
+[0.757s] creating /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts
+[0.757s] copying my_robot/scripts/__init__.py -> /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts
+[0.757s] copying my_robot/scripts/blip_yolo_integrated.py -> /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts
+[0.757s] copying my_robot/scripts/blip_hybrid_node.py -> /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts
+[0.758s] copying my_robot/scripts/yolo_detection_node.py -> /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts
+[0.758s] copying my_robot/scripts/blip2_vision_node.py -> /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts
+[0.758s] copying my_robot/scripts/blip_hybrid2_node.py -> /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts
+[0.758s] copying my_robot/scripts/blip1_vision_node.py -> /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts
+[0.758s] copying my_robot/scripts/blip_yolo_webcam.py -> /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts
+[0.758s] copying my_robot/scripts/clip_vqa.py -> /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts
+[0.758s] running install
+[0.758s] running install_lib
+[0.759s] creating /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot
+[0.759s] copying /home/sayan/yanyan/build/my_robot/build/lib/my_robot/__init__.py -> /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot
+[0.760s] creating /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts
+[0.760s] copying /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts/__init__.py -> /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts
+[0.760s] copying /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts/blip_yolo_integrated.py -> /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts
+[0.760s] copying /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts/blip_hybrid_node.py -> /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts
+[0.760s] copying /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts/yolo_detection_node.py -> /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts
+[0.760s] copying /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts/blip2_vision_node.py -> /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts
+[0.761s] copying /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts/blip_hybrid2_node.py -> /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts
+[0.761s] copying /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts/blip1_vision_node.py -> /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts
+[0.761s] copying /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts/blip_yolo_webcam.py -> /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts
+[0.761s] copying /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts/clip_vqa.py -> /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts
+[0.761s] copying /home/sayan/yanyan/build/my_robot/build/lib/my_robot/sensor_fusion_node.py -> /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot
+[0.761s] byte-compiling /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/__init__.py to __init__.cpython-310.pyc
+[0.762s] byte-compiling /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts/__init__.py to __init__.cpython-310.pyc
+[0.762s] byte-compiling /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts/blip_yolo_integrated.py to blip_yolo_integrated.cpython-310.pyc
+[0.764s] byte-compiling /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts/blip_hybrid_node.py to blip_hybrid_node.cpython-310.pyc
+[0.765s] byte-compiling /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts/yolo_detection_node.py to yolo_detection_node.cpython-310.pyc
+[0.766s] byte-compiling /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts/blip2_vision_node.py to blip2_vision_node.cpython-310.pyc
+[0.766s] byte-compiling /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts/blip_hybrid2_node.py to blip_hybrid2_node.cpython-310.pyc
+[0.767s] byte-compiling /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts/blip1_vision_node.py to blip1_vision_node.cpython-310.pyc
+[0.768s] byte-compiling /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts/blip_yolo_webcam.py to blip_yolo_webcam.cpython-310.pyc
+[0.769s] byte-compiling /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts/clip_vqa.py to clip_vqa.cpython-310.pyc
+[0.770s] byte-compiling /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/sensor_fusion_node.py to sensor_fusion_node.cpython-310.pyc
+[0.771s] running install_data
+[0.771s] creating /home/sayan/yanyan/install/my_robot/share/ament_index
+[0.771s] creating /home/sayan/yanyan/install/my_robot/share/ament_index/resource_index
+[0.771s] creating /home/sayan/yanyan/install/my_robot/share/ament_index/resource_index/packages
+[0.771s] copying resource/my_robot -> /home/sayan/yanyan/install/my_robot/share/ament_index/resource_index/packages
+[0.771s] copying package.xml -> /home/sayan/yanyan/install/my_robot/share/my_robot
+[0.771s] creating /home/sayan/yanyan/install/my_robot/share/my_robot/launch
+[0.772s] copying launch/gazebo_with_robot.launch - 복사본.py -> /home/sayan/yanyan/install/my_robot/share/my_robot/launch
+[0.772s] copying launch/gazebo.launch.py -> /home/sayan/yanyan/install/my_robot/share/my_robot/launch
+[0.772s] copying launch/navigation.launch.py -> /home/sayan/yanyan/install/my_robot/share/my_robot/launch
+[0.772s] copying launch/kitti_visualization.launch.py -> /home/sayan/yanyan/install/my_robot/share/my_robot/launch
+[0.772s] copying launch/navigation2.launch - 복사본.py -> /home/sayan/yanyan/install/my_robot/share/my_robot/launch
+[0.773s] copying launch/display.launch.py -> /home/sayan/yanyan/install/my_robot/share/my_robot/launch
+[0.773s] copying launch/gazebo_with_robot.launch.py -> /home/sayan/yanyan/install/my_robot/share/my_robot/launch
+[0.773s] copying launch/navigation1.launch.py -> /home/sayan/yanyan/install/my_robot/share/my_robot/launch
+[0.773s] copying launch/navigation2.launch.py -> /home/sayan/yanyan/install/my_robot/share/my_robot/launch
+[0.773s] creating /home/sayan/yanyan/install/my_robot/share/my_robot/urdf
+[0.773s] creating /home/sayan/yanyan/install/my_robot/share/my_robot/config
+[0.773s] copying config/frames_2025-11-01_03.21.27.pdf -> /home/sayan/yanyan/install/my_robot/share/my_robot/config
+[0.774s] copying config/kitti_style_rviz.rviz -> /home/sayan/yanyan/install/my_robot/share/my_robot/config
+[0.774s] copying config/mapper_params_online_async.yaml -> /home/sayan/yanyan/install/my_robot/share/my_robot/config
+[0.774s] copying config/nav2_params.yaml -> /home/sayan/yanyan/install/my_robot/share/my_robot/config
+[0.774s] copying config/frames_2025-11-01_03.21.27.gv -> /home/sayan/yanyan/install/my_robot/share/my_robot/config
+[0.774s] creating /home/sayan/yanyan/install/my_robot/share/my_robot/maps
+[0.774s] copying maps/office_map.yaml -> /home/sayan/yanyan/install/my_robot/share/my_robot/maps
+[0.774s] copying maps/office_map.pgm -> /home/sayan/yanyan/install/my_robot/share/my_robot/maps
+[0.775s] creating /home/sayan/yanyan/install/my_robot/share/my_robot/worlds
+[0.775s] copying worlds/gochang_dolmen_park.world -> /home/sayan/yanyan/install/my_robot/share/my_robot/worlds
+[0.775s] creating /home/sayan/yanyan/install/my_robot/share/my_robot/scripts
+[0.775s] copying scripts/blip2_vision_node.py -> /home/sayan/yanyan/install/my_robot/share/my_robot/scripts
+[0.775s] running install_egg_info
+[0.777s] Copying ../../build/my_robot/my_robot.egg-info to /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot-0.0.0-py3.10.egg-info
+[0.778s] running install_scripts
+[0.791s] Installing blip_vision_node script to /home/sayan/yanyan/install/my_robot/lib/my_robot
+[0.791s] Installing sensor_fusion_node script to /home/sayan/yanyan/install/my_robot/lib/my_robot
+[0.792s] Installing yolo_detection_node script to /home/sayan/yanyan/install/my_robot/lib/my_robot
+[0.792s] writing list of installed files to '/home/sayan/yanyan/build/my_robot/install.log'
+[0.807s] Invoked command in '/home/sayan/yanyan/src/my_robot' returned '0': PYTHONPATH=/home/sayan/yanyan/build/my_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_robot build --build-base /home/sayan/yanyan/build/my_robot/build install --record /home/sayan/yanyan/build/my_robot/install.log --single-version-externally-managed install_data

@@ -1,0 +1,105 @@
+[0.000000] (-) TimerEvent: {}
+[0.000162] (my_robot) JobQueued: {'identifier': 'my_robot', 'dependencies': OrderedDict()}
+[0.000184] (my_robot) JobStarted: {'identifier': 'my_robot'}
+[0.099092] (-) TimerEvent: {}
+[0.199504] (-) TimerEvent: {}
+[0.300038] (-) TimerEvent: {}
+[0.400515] (-) TimerEvent: {}
+[0.500900] (-) TimerEvent: {}
+[0.562931] (my_robot) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/my_robot', 'build', '--build-base', '/home/sayan/yanyan/build/my_robot/build', 'install', '--record', '/home/sayan/yanyan/build/my_robot/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/sayan/yanyan/src/my_robot', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'sayan', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'update-motd', 'HOME': '/home/sayan', 'OLDPWD': '/home/sayan/yanyan', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/sayan/yanyan/install:/home/sayan/my_robot_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'sayan', 'NAME': 'DESKTOP-2C9PM6R', 'WSL_INTEROP': '/run/WSL/323_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/home/sayan/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/user/AppData/Roaming/Python/Python312/site-packages:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files (x86)/NetSarang/Xshell 8/:/mnt/c/Users/user/Downloads/commandlinetools-win-11076708_latest:/mnt/c/Users/user/Downloads/openjdk-17.0.0.1+2_windows-x64_bin/jdk-17.0.0.1/bin:/mnt/c/Users/user/AppData/Local/Programs/Python/Python312/:/mnt/c/Users/user/AppData/Local/Programs/Python/Python312/Scripts/:/mnt/c/Users/user/AppData/Local/Programs/Python/Python38/Scripts:/mnt/c/Users/user/Desktop/웹 서비스 설계/apache-maven-3.9.9-bin/apache-maven-3.9.9/bin:/mnt/c/Program Files/:/mnt/c/Users/user/AppData/Local/Programs/Python/Launcher/:/mnt/c/Users/user/AppData/Local/Programs/Python/Python38/Scripts/:/mnt/c/Users/user/AppData/Local/Programs/Python/Python38/:/mnt/c/Users/user/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/user/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/user/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/user/.dotnet/tools:/mnt/d/Microsoft VS Code/bin:/mnt/c/mingw/bin:/mnt/c/Users/user/AppData/Roaming/npm:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/sayan/yanyan/install/my_robot:/home/sayan/my_robot_ws/install/my_robot:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/sayan/yanyan/build/my_robot', 'TURTLEBOT3_MODEL': 'waffle_pi', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/sayan/yanyan/build/my_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages:/home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages:/home/sayan/my_robot_ws/install/my_robot/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'WSLENV': ''}, 'shell': False}
+[0.601188] (-) TimerEvent: {}
+[0.701516] (-) TimerEvent: {}
+[0.752505] (my_robot) StdoutLine: {'line': b'running egg_info\n'}
+[0.752783] (my_robot) StdoutLine: {'line': b'creating ../../build/my_robot/my_robot.egg-info\n'}
+[0.753176] (my_robot) StdoutLine: {'line': b'writing ../../build/my_robot/my_robot.egg-info/PKG-INFO\n'}
+[0.753454] (my_robot) StdoutLine: {'line': b'writing dependency_links to ../../build/my_robot/my_robot.egg-info/dependency_links.txt\n'}
+[0.753645] (my_robot) StdoutLine: {'line': b'writing entry points to ../../build/my_robot/my_robot.egg-info/entry_points.txt\n'}
+[0.753715] (my_robot) StdoutLine: {'line': b'writing requirements to ../../build/my_robot/my_robot.egg-info/requires.txt\n'}
+[0.753758] (my_robot) StdoutLine: {'line': b'writing top-level names to ../../build/my_robot/my_robot.egg-info/top_level.txt\n'}
+[0.753796] (my_robot) StdoutLine: {'line': b"writing manifest file '../../build/my_robot/my_robot.egg-info/SOURCES.txt'\n"}
+[0.755228] (my_robot) StdoutLine: {'line': b"reading manifest file '../../build/my_robot/my_robot.egg-info/SOURCES.txt'\n"}
+[0.755649] (my_robot) StdoutLine: {'line': b"writing manifest file '../../build/my_robot/my_robot.egg-info/SOURCES.txt'\n"}
+[0.755985] (my_robot) StdoutLine: {'line': b'running build\n'}
+[0.756028] (my_robot) StdoutLine: {'line': b'running build_py\n'}
+[0.756062] (my_robot) StdoutLine: {'line': b'creating /home/sayan/yanyan/build/my_robot/build\n'}
+[0.756232] (my_robot) StdoutLine: {'line': b'creating /home/sayan/yanyan/build/my_robot/build/lib\n'}
+[0.756465] (my_robot) StdoutLine: {'line': b'creating /home/sayan/yanyan/build/my_robot/build/lib/my_robot\n'}
+[0.756510] (my_robot) StdoutLine: {'line': b'copying my_robot/__init__.py -> /home/sayan/yanyan/build/my_robot/build/lib/my_robot\n'}
+[0.756654] (my_robot) StdoutLine: {'line': b'copying my_robot/sensor_fusion_node.py -> /home/sayan/yanyan/build/my_robot/build/lib/my_robot\n'}
+[0.756835] (my_robot) StdoutLine: {'line': b'creating /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts\n'}
+[0.756954] (my_robot) StdoutLine: {'line': b'copying my_robot/scripts/__init__.py -> /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts\n'}
+[0.757388] (my_robot) StdoutLine: {'line': b'copying my_robot/scripts/blip_yolo_integrated.py -> /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts\n'}
+[0.757521] (my_robot) StdoutLine: {'line': b'copying my_robot/scripts/blip_hybrid_node.py -> /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts\n'}
+[0.757661] (my_robot) StdoutLine: {'line': b'copying my_robot/scripts/yolo_detection_node.py -> /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts\n'}
+[0.757790] (my_robot) StdoutLine: {'line': b'copying my_robot/scripts/blip2_vision_node.py -> /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts\n'}
+[0.758024] (my_robot) StdoutLine: {'line': b'copying my_robot/scripts/blip_hybrid2_node.py -> /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts\n'}
+[0.758095] (my_robot) StdoutLine: {'line': b'copying my_robot/scripts/blip1_vision_node.py -> /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts\n'}
+[0.758186] (my_robot) StdoutLine: {'line': b'copying my_robot/scripts/blip_yolo_webcam.py -> /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts\n'}
+[0.758231] (my_robot) StdoutLine: {'line': b'copying my_robot/scripts/clip_vqa.py -> /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts\n'}
+[0.758273] (my_robot) StdoutLine: {'line': b'running install\n'}
+[0.758447] (my_robot) StdoutLine: {'line': b'running install_lib\n'}
+[0.759227] (my_robot) StdoutLine: {'line': b'creating /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot\n'}
+[0.759436] (my_robot) StdoutLine: {'line': b'copying /home/sayan/yanyan/build/my_robot/build/lib/my_robot/__init__.py -> /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot\n'}
+[0.759756] (my_robot) StdoutLine: {'line': b'creating /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts\n'}
+[0.759962] (my_robot) StdoutLine: {'line': b'copying /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts/__init__.py -> /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts\n'}
+[0.760135] (my_robot) StdoutLine: {'line': b'copying /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts/blip_yolo_integrated.py -> /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts\n'}
+[0.760276] (my_robot) StdoutLine: {'line': b'copying /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts/blip_hybrid_node.py -> /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts\n'}
+[0.760458] (my_robot) StdoutLine: {'line': b'copying /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts/yolo_detection_node.py -> /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts\n'}
+[0.760605] (my_robot) StdoutLine: {'line': b'copying /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts/blip2_vision_node.py -> /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts\n'}
+[0.760729] (my_robot) StdoutLine: {'line': b'copying /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts/blip_hybrid2_node.py -> /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts\n'}
+[0.760935] (my_robot) StdoutLine: {'line': b'copying /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts/blip1_vision_node.py -> /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts\n'}
+[0.761129] (my_robot) StdoutLine: {'line': b'copying /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts/blip_yolo_webcam.py -> /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts\n'}
+[0.761244] (my_robot) StdoutLine: {'line': b'copying /home/sayan/yanyan/build/my_robot/build/lib/my_robot/scripts/clip_vqa.py -> /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts\n'}
+[0.761334] (my_robot) StdoutLine: {'line': b'copying /home/sayan/yanyan/build/my_robot/build/lib/my_robot/sensor_fusion_node.py -> /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot\n'}
+[0.761566] (my_robot) StdoutLine: {'line': b'byte-compiling /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/__init__.py to __init__.cpython-310.pyc\n'}
+[0.761841] (my_robot) StdoutLine: {'line': b'byte-compiling /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts/__init__.py to __init__.cpython-310.pyc\n'}
+[0.762175] (my_robot) StdoutLine: {'line': b'byte-compiling /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts/blip_yolo_integrated.py to blip_yolo_integrated.cpython-310.pyc\n'}
+[0.763736] (my_robot) StdoutLine: {'line': b'byte-compiling /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts/blip_hybrid_node.py to blip_hybrid_node.cpython-310.pyc\n'}
+[0.764995] (my_robot) StdoutLine: {'line': b'byte-compiling /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts/yolo_detection_node.py to yolo_detection_node.cpython-310.pyc\n'}
+[0.765838] (my_robot) StdoutLine: {'line': b'byte-compiling /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts/blip2_vision_node.py to blip2_vision_node.cpython-310.pyc\n'}
+[0.766525] (my_robot) StdoutLine: {'line': b'byte-compiling /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts/blip_hybrid2_node.py to blip_hybrid2_node.cpython-310.pyc\n'}
+[0.767412] (my_robot) StdoutLine: {'line': b'byte-compiling /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts/blip1_vision_node.py to blip1_vision_node.cpython-310.pyc\n'}
+[0.768074] (my_robot) StdoutLine: {'line': b'byte-compiling /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts/blip_yolo_webcam.py to blip_yolo_webcam.cpython-310.pyc\n'}
+[0.769163] (my_robot) StdoutLine: {'line': b'byte-compiling /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/scripts/clip_vqa.py to clip_vqa.cpython-310.pyc\n'}
+[0.770447] (my_robot) StdoutLine: {'line': b'byte-compiling /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot/sensor_fusion_node.py to sensor_fusion_node.cpython-310.pyc\n'}
+[0.770783] (my_robot) StdoutLine: {'line': b'running install_data\n'}
+[0.770869] (my_robot) StdoutLine: {'line': b'creating /home/sayan/yanyan/install/my_robot/share/ament_index\n'}
+[0.770992] (my_robot) StdoutLine: {'line': b'creating /home/sayan/yanyan/install/my_robot/share/ament_index/resource_index\n'}
+[0.771129] (my_robot) StdoutLine: {'line': b'creating /home/sayan/yanyan/install/my_robot/share/ament_index/resource_index/packages\n'}
+[0.771276] (my_robot) StdoutLine: {'line': b'copying resource/my_robot -> /home/sayan/yanyan/install/my_robot/share/ament_index/resource_index/packages\n'}
+[0.771397] (my_robot) StdoutLine: {'line': b'copying package.xml -> /home/sayan/yanyan/install/my_robot/share/my_robot\n'}
+[0.771525] (my_robot) StdoutLine: {'line': b'creating /home/sayan/yanyan/install/my_robot/share/my_robot/launch\n'}
+[0.771727] (my_robot) StdoutLine: {'line': b'copying launch/gazebo_with_robot.launch - \xeb\xb3\xb5\xec\x82\xac\xeb\xb3\xb8.py -> /home/sayan/yanyan/install/my_robot/share/my_robot/launch\n'}
+[0.771847] (my_robot) StdoutLine: {'line': b'copying launch/gazebo.launch.py -> /home/sayan/yanyan/install/my_robot/share/my_robot/launch\n'}
+[0.772032] (my_robot) StdoutLine: {'line': b'copying launch/navigation.launch.py -> /home/sayan/yanyan/install/my_robot/share/my_robot/launch\n'}
+[0.772089] (my_robot) StdoutLine: {'line': b'copying launch/kitti_visualization.launch.py -> /home/sayan/yanyan/install/my_robot/share/my_robot/launch\n'}
+[0.772533] (my_robot) StdoutLine: {'line': b'copying launch/navigation2.launch - \xeb\xb3\xb5\xec\x82\xac\xeb\xb3\xb8.py -> /home/sayan/yanyan/install/my_robot/share/my_robot/launch\n'}
+[0.772741] (my_robot) StdoutLine: {'line': b'copying launch/display.launch.py -> /home/sayan/yanyan/install/my_robot/share/my_robot/launch\n'}
+[0.772919] (my_robot) StdoutLine: {'line': b'copying launch/gazebo_with_robot.launch.py -> /home/sayan/yanyan/install/my_robot/share/my_robot/launch\n'}
+[0.773206] (my_robot) StdoutLine: {'line': b'copying launch/navigation1.launch.py -> /home/sayan/yanyan/install/my_robot/share/my_robot/launch\n'}
+[0.773341] (my_robot) StdoutLine: {'line': b'copying launch/navigation2.launch.py -> /home/sayan/yanyan/install/my_robot/share/my_robot/launch\n'}
+[0.773388] (my_robot) StdoutLine: {'line': b'creating /home/sayan/yanyan/install/my_robot/share/my_robot/urdf\n'}
+[0.773432] (my_robot) StdoutLine: {'line': b'creating /home/sayan/yanyan/install/my_robot/share/my_robot/config\n'}
+[0.773646] (my_robot) StdoutLine: {'line': b'copying config/frames_2025-11-01_03.21.27.pdf -> /home/sayan/yanyan/install/my_robot/share/my_robot/config\n'}
+[0.773704] (my_robot) StdoutLine: {'line': b'copying config/kitti_style_rviz.rviz -> /home/sayan/yanyan/install/my_robot/share/my_robot/config\n'}
+[0.774061] (my_robot) StdoutLine: {'line': b'copying config/mapper_params_online_async.yaml -> /home/sayan/yanyan/install/my_robot/share/my_robot/config\n'}
+[0.774194] (my_robot) StdoutLine: {'line': b'copying config/nav2_params.yaml -> /home/sayan/yanyan/install/my_robot/share/my_robot/config\n'}
+[0.774260] (my_robot) StdoutLine: {'line': b'copying config/frames_2025-11-01_03.21.27.gv -> /home/sayan/yanyan/install/my_robot/share/my_robot/config\n'}
+[0.774416] (my_robot) StdoutLine: {'line': b'creating /home/sayan/yanyan/install/my_robot/share/my_robot/maps\n'}
+[0.774578] (my_robot) StdoutLine: {'line': b'copying maps/office_map.yaml -> /home/sayan/yanyan/install/my_robot/share/my_robot/maps\n'}
+[0.774629] (my_robot) StdoutLine: {'line': b'copying maps/office_map.pgm -> /home/sayan/yanyan/install/my_robot/share/my_robot/maps\n'}
+[0.774787] (my_robot) StdoutLine: {'line': b'creating /home/sayan/yanyan/install/my_robot/share/my_robot/worlds\n'}
+[0.774900] (my_robot) StdoutLine: {'line': b'copying worlds/gochang_dolmen_park.world -> /home/sayan/yanyan/install/my_robot/share/my_robot/worlds\n'}
+[0.775362] (my_robot) StdoutLine: {'line': b'creating /home/sayan/yanyan/install/my_robot/share/my_robot/scripts\n'}
+[0.775516] (my_robot) StdoutLine: {'line': b'copying scripts/blip2_vision_node.py -> /home/sayan/yanyan/install/my_robot/share/my_robot/scripts\n'}
+[0.775636] (my_robot) StdoutLine: {'line': b'running install_egg_info\n'}
+[0.777187] (my_robot) StdoutLine: {'line': b'Copying ../../build/my_robot/my_robot.egg-info to /home/sayan/yanyan/install/my_robot/lib/python3.10/site-packages/my_robot-0.0.0-py3.10.egg-info\n'}
+[0.777960] (my_robot) StdoutLine: {'line': b'running install_scripts\n'}
+[0.791284] (my_robot) StdoutLine: {'line': b'Installing blip_vision_node script to /home/sayan/yanyan/install/my_robot/lib/my_robot\n'}
+[0.791474] (my_robot) StdoutLine: {'line': b'Installing sensor_fusion_node script to /home/sayan/yanyan/install/my_robot/lib/my_robot\n'}
+[0.791951] (my_robot) StdoutLine: {'line': b'Installing yolo_detection_node script to /home/sayan/yanyan/install/my_robot/lib/my_robot\n'}
+[0.792472] (my_robot) StdoutLine: {'line': b"writing list of installed files to '/home/sayan/yanyan/build/my_robot/install.log'\n"}
+[0.801894] (-) TimerEvent: {}
+[0.807401] (my_robot) CommandEnded: {'returncode': 0}
+[0.822639] (my_robot) JobEnded: {'identifier': 'my_robot', 'rc': 0}
+[0.823335] (-) EventReactorShutdown: {}

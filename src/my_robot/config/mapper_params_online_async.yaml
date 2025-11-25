@@ -1,0 +1,50 @@
+slam_toolbox:
+  ros__parameters:
+    # 기본 프레임
+    odom_frame: odom
+    map_frame: map
+    base_frame: base_footprint
+    scan_topic: /scan_filtered
+    use_scan_matching: true
+    use_scan_barycenter: true
+    
+    # 레이저 범위 설정 (노이즈 제거 강화!)
+    minimum_range: 0.5                 # 0.3 → 0.5 (가까운 노이즈 차단)
+    maximum_range: 12.0         # 15.0 → 12.0 (먼 노이즈 차단)
+    minimum_angle: -3.14159
+    maximum_angle: 3.14159
+    
+    # 해상도
+    resolution: 0.05
+
+    # 전문가 추천: 상관관계 검색 공간
+    correlation_search_space_dimension: 0.5
+    correlation_search_space_resolution: 0.01
+    correlation_search_space_smear_deviation: 0.1
+    
+    # 전문가 추천: 노이즈 감소 파라미터
+    minimum_travel_distance: 0.2
+    minimum_travel_heading: 0.2
+    
+    # 전문가 추천: 스캔 버퍼 설정 (노이즈 제거!)
+    scan_buffer_size: 15               # 20 → 15
+    scan_buffer_maximum_scan_distance: 12.0  # 15.0 → 12.0
+    max_laser_range: 12.0              # 추가!
+    
+    # 기타 최적화
+    minimum_time_interval: 0.5
+    transform_timeout: 0.2
+    tf_buffer_duration: 30.0
+    stack_size_to_use: 40000000
+    
+    # 루프 클로저 (더 보수적으로)
+    do_loop_closing: true
+    loop_search_maximum_distance: 2.5  # 3.0 → 2.5
+    loop_match_minimum_chain_size: 12  # 10 → 12 (더 신중하게)
+    loop_match_maximum_variance_coarse: 2.5  # 3.0 → 2.5
+    loop_match_minimum_response_coarse: 0.4  # 0.35 → 0.4 (더 엄격)
+    
+    # 스캔 매칭
+    minimum_angle_penalty: 0.9
+    minimum_distance_penalty: 0.5
+    use_response_expansion: true
